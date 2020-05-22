@@ -21,7 +21,7 @@ jobs:
         java-version: '8'
 
     - name: Build with Maven
-      run: mvn clean install
+      run: mvn -f complete/pom.xml clean install
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v1
@@ -29,4 +29,4 @@ jobs:
         app-name: 'rafawebapp1(staging)'
         slot-name: 'staging'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_a18aae287b8d40e48f6b4aff940cfafe }}
-        package: '${{ github.workspace }}/target/*.jar'
+        package: '${{ github.workspace }}/complete/target/*.jar'
