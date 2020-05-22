@@ -24,6 +24,6 @@ public class HelloControllerTest {
 	public void getHello() throws Exception {
 		mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isOk())
-				.andExpect(content().string(equalTo("Hello DEV BRANCHv2! Springboot App!")));
+				.andExpect(content().string(equalTo("Hello DEV BRANCHv3! Springboot App!")));
 	}
 }

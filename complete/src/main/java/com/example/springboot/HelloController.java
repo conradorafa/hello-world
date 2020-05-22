@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Hello DEV BRANCHv2! Springboot App!";
+		return "Hello DEV BRANCHv3! Springboot App!";
 	}
 
 }
