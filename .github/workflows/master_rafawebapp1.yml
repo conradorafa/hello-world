@@ -29,4 +29,4 @@ jobs:
         app-name: 'rafawebapp1'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_986c68b2a45c41f6a2c4b71f7d0c69ce }}
-        package: '${{ github.workspace }}/target/*.jar'
+        package: '${{ github.workspace }}/complete/target/*.jar'
